@@ -3,7 +3,7 @@
 exists to benchmark different templating engines. See branches. 
 
 
-## Freemarker
+## Templator
 
 ```
 ab -n 100  http://localhost:8080/
