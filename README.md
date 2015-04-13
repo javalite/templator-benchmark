@@ -6,23 +6,12 @@ exists to benchmark different templating engines. See branches.
 ## Freemarker
 
 ```
- ab -n 1000 http://localhost:8080/
+ab -n 100  http://localhost:8080/
 This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
-Benchmarking localhost (be patient)
-Completed 100 requests
-Completed 200 requests
-Completed 300 requests
-Completed 400 requests
-Completed 500 requests
-Completed 600 requests
-Completed 700 requests
-Completed 800 requests
-Completed 900 requests
-Completed 1000 requests
-Finished 1000 requests
+Benchmarking localhost (be patient).....done
 
 
 Server Software:        Jetty(9.3.0.M1)
@@ -30,36 +19,35 @@ Server Hostname:        localhost
 Server Port:            8080
 
 Document Path:          /
-Document Length:        9109 bytes
+Document Length:        9454 bytes
 
 Concurrency Level:      1
-Time taken for tests:   4.984 seconds
-Complete requests:      1000
-Failed requests:        9
-   (Connect: 0, Receive: 0, Length: 0, Exceptions: 9)
-Total transferred:      9330986 bytes
-HTML transferred:       9109000 bytes
-Requests per second:    200.65 [#/sec] (mean)
-Time per request:       4.984 [ms] (mean)
-Time per request:       4.984 [ms] (mean, across all concurrent requests)
-Transfer rate:          1828.36 [Kbytes/sec] received
+Time taken for tests:   0.719 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      969805 bytes
+HTML transferred:       945400 bytes
+Requests per second:    139.00 [#/sec] (mean)
+Time per request:       7.194 [ms] (mean)
+Time per request:       7.194 [ms] (mean, across all concurrent requests)
+Transfer rate:          1316.47 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
 Connect:        0    0   0.0      0       0
-Processing:     3    5   1.9      5      37
-Waiting:        3    5   1.9      5      37
-Total:          3    5   1.9      5      37
+Processing:     4    7   1.5      8      10
+Waiting:        4    7   1.5      8      10
+Total:          4    7   1.5      8      10
 
 Percentage of the requests served within a certain time (ms)
-  50%      5
-  66%      6
-  75%      6
-  80%      6
-  90%      7
-  95%      7
-  98%      7
-  99%      7
- 100%     37 (longest request)
+  50%      8
+  66%      8
+  75%      8
+  80%      8
+  90%      9
+  95%     10
+  98%     10
+  99%     10
+ 100%     10 (longest request)
 
 ```
