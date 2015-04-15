@@ -17,12 +17,13 @@ package app.config;
 
 import org.javalite.activeweb.AppContext;
 import org.javalite.activeweb.Bootstrap;
+import org.javalite.templator.TemplatorConfig;
 
 /**
  * @author Igor Polevoy
  */
 public class AppBootstrap extends Bootstrap {
-    public void init(AppContext context) {        
-
+    public void init(AppContext context) {
+        TemplatorConfig.instance().cacheTemplates(true);
     }
 }
