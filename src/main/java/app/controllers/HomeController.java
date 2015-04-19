@@ -16,6 +16,7 @@ limitations under the License.
 
 package app.controllers;
 
+import app.models.Stock;
 import org.javalite.activeweb.AppController;
 
 import java.util.List;
@@ -25,6 +26,7 @@ import java.util.List;
  */
 public class HomeController extends AppController {
     public void index(){
-        view("people", Person.people);
+        view("items", Stock.dummyItems());
+        render().noLayout();
     }
 }
