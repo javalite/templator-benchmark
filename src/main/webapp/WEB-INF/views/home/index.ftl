@@ -52,8 +52,8 @@ thead {
    </thead>
    <tbody>
 <#list items as item>
-    <tr class="${["odd", "even"][item_index%2]}">
-     <td style="text-align: center">${item_index + 1}</td>
+    <tr class="even">
+     <td style="text-align: center">${item_index}</td>
      <td>
       <a href="/stocks/${item.symbol}">${item.symbol}</a>
      </td>
